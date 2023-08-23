@@ -10,11 +10,11 @@
  
  ##### 3. Установить .apk файл приложения todolist на телефон с компьютера через  ADB
 
-	add install /Users/yaroslav/Desktop/Todolist.apk
+	adb install /Users/yaroslav/Desktop/Todolist.apk
 
 ##### 4. Сделать скриншот запущенного приложения todolist и сразу скопировать на компьютер в одной команде.
 	
-    add shell screencap /storage/emulated/0/DCIM/Screenshots/todo.png | adb pull /storage/emulated/0/DCIM/Screenshots/todo.png Desktop
+    adb shell screencap /storage/emulated/0/DCIM/Screenshots/todo.png | adb pull /storage/emulated/0/DCIM/Screenshots/todo.png Desktop
  
  ##### 5. Вывести в консоль логи приложения todolist
 	
